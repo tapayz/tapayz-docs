@@ -201,5 +201,5 @@ webhookQueue.process("process-webhook", async (job) => {
 
 - [Invoice Webhook](./invoice) - Invoice Webhook Details
 - [Transaction Webhook](./transaction) - Transaction Webhook Details
-- [Invoice API](../api/invoice) - Invoice API
-- [Transaction API](../api/transaction) - Transaction Query API
+- [Invoice API](/api/invoice) - Invoice API
+- [Transaction API](/api/transaction) - Transaction Query API

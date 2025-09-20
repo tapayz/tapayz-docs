@@ -43,6 +43,7 @@ const koSidebar = {
         { text: "가격 조회", link: "/ko/api/price" },
         { text: "고객 관리", link: "/ko/api/customer" },
         { text: "인보이스", link: "/ko/api/invoice" },
+        { text: "거래 조회", link: "/ko/api/transaction" },
       ],
     },
     {
@@ -83,6 +84,7 @@ const enSidebar = {
         { text: "Price API", link: "/api/price" },
         { text: "Customer API", link: "/api/customer" },
         { text: "Invoice API", link: "/api/invoice" },
+        { text: "Transaction API", link: "/api/transaction" },
       ],
     },
     {
@@ -146,6 +148,11 @@ export default defineConfig({
         returnToTopLabel: "맨 위로",
       },
     },
+  },
+
+  // Move English content to root
+  rewrites: {
+    "en/:rest*": ":rest*"
   },
 
   // Build options
