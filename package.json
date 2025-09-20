@@ -8,12 +8,7 @@
     "build": "vitepress build docs",
     "preview": "vitepress preview docs --port 5000",
     "serve": "vitepress serve docs --port 5000",
-    "start": "pm2 start ecosystem.config.js",
-    "stop": "pm2 stop tapayz-docs",
-    "restart": "pm2 restart tapayz-docs",
-    "delete": "pm2 delete tapayz-docs",
-    "logs": "pm2 logs tapayz-docs",
-    "deploy": "yarn build && yarn start"
+    "start": "pm2 serve ./dist 5000 --spa --name tapayz-docs"
   },
   "devDependencies": {
     "vitepress": "^1.0.0-rc.31",
