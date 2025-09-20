@@ -32,7 +32,7 @@ The Tapayz payment flow proceeds as follows:
 5. Transaction confirmation on blockchain network
 6. Payment completion and Webhook notification
 
-> 🔗 Diagrams will be available later in the [API Integration Guide](./getting-started/README.md).
+> 🔗 Diagrams will be available later in the [API Integration Guide](./getting-started/).
 
 ---
 
@@ -62,7 +62,7 @@ The Tapayz payment flow proceeds as follows:
 
 - **Webhook Security** :
   - Webhooks sent from Tapayz can be verified for forgery through **signature** verification
-  - Refer to [Webhook Guide](./api/webhook.md) for examples
+  - Refer to [Webhook Guide](./webhook/) for examples
 
 ---
 
@@ -83,4 +83,4 @@ The Tapayz payment flow proceeds as follows:
 
 ## Next Steps
 
-Now go directly to [Quick Start](./getting-started/README.md) to begin API integration 🚀
+Now go directly to [Quick Start](./getting-started/) to begin API integration 🚀
