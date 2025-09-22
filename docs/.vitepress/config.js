@@ -57,6 +57,47 @@ const koSidebar = {
   ],
 };
 
+// Japanese navigation
+const jpNav = [
+  { text: "ホーム", link: "/jp/" },
+  { text: "はじめに", link: "/jp/getting-started/" },
+  { text: "APIリファレンス", link: "/jp/api/" },
+  { text: "Webhook", link: "/jp/webhook/" },
+];
+
+const jpSidebar = {
+  "/jp/": [
+    {
+      text: "紹介",
+      items: [{ text: "Tapayzとは？", link: "/jp/" }],
+    },
+    {
+      text: "はじめに",
+      items: [
+        { text: "連携ガイド", link: "/jp/getting-started/" },
+        { text: "クイックスタート", link: "/jp/getting-started/quickflow" },
+      ],
+    },
+    {
+      text: "APIリファレンス",
+      items: [
+        { text: "価格照会", link: "/jp/api/price" },
+        { text: "顧客管理", link: "/jp/api/customer" },
+        { text: "インボイス", link: "/jp/api/invoice" },
+        { text: "取引照会", link: "/jp/api/transaction" },
+      ],
+    },
+    {
+      text: "Webhook",
+      items: [
+        { text: "Webhook概要", link: "/jp/webhook/" },
+        { text: "インボイスWebhook", link: "/jp/webhook/invoice" },
+        { text: "トランザクションWebhook", link: "/jp/webhook/transaction" },
+      ],
+    },
+  ],
+};
+
 // English navigation
 const enNav = [
   { text: "Home", link: "/" },
@@ -146,6 +187,30 @@ export default defineConfig({
         darkModeSwitchLabel: "다크 모드",
         sidebarMenuLabel: "메뉴",
         returnToTopLabel: "맨 위로",
+      },
+    },
+    jp: {
+      label: "日本語",
+      lang: "ja-JP",
+      title: "Tapayz",
+      description: "暗号通貨決済 API ドキュメント",
+      themeConfig: {
+        ...sharedConfig.themeConfig,
+        nav: jpNav,
+        sidebar: jpSidebar,
+        outline: {
+          label: "目次",
+        },
+        lastUpdated: {
+          text: "最終更新",
+        },
+        docFooter: {
+          prev: "前へ",
+          next: "次へ",
+        },
+        darkModeSwitchLabel: "ダークモード",
+        sidebarMenuLabel: "メニュー",
+        returnToTopLabel: "トップへ戻る",
       },
     },
   },
